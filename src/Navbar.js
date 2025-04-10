@@ -30,6 +30,7 @@ function Navbar() {
           <Link to="/about">About</Link>
           <Link to="/awareness">Leprosy Awareness</Link>
           <Link to="/fundraiser">Fundraiser</Link>
+          <Link to="/videos">Videos</Link> 
           <Link to="/contact">Contact</Link>
         </div>
       </div>
@@ -42,6 +43,7 @@ function Navbar() {
           <Link to="/awareness" onClick={() => setIsMenuOpen(false)}>Leprosy Awareness</Link>
           <Link to="/fundraiser" onClick={() => setIsMenuOpen(false)}>Fundraiser</Link>
           <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          <Link to="/videos" onClick={() => setIsMenuOpen(false)}>Videos</Link> {/* ✅ Added this line */}
         </div>
       )}
     </nav>
