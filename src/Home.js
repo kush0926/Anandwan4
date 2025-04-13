@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -7,11 +7,11 @@ function Home() {
     <div className="home-page">
       {/* Hero Section with Background Video */}
       <section className="hero">
-      <video autoPlay muted loop className="hero-video">
-  <source src="/videos/3696027-hd_1920_1080_24fps.mp4" type="video/mp4" />
-  <source src="/videos/3696027-hd_1920_1080_24fps.webm" type="video/webm" />
-  Your browser does not support the video tag.
-</video>
+        <video autoPlay muted loop className="hero-video">
+          <source src="/videos/3696027-hd_1920_1080_24fps.mp4" type="video/mp4" />
+          <source src="/videos/3696027-hd_1920_1080_24fps.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
 
         <div className="hero-overlay"></div>
         <div className="hero-content">
